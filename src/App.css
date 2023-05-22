@@ -1,38 +1,207 @@
-.App {
-  text-align: center;
+*{
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.app {
+    max-width: 800px;
+    margin: 0 auto;
   }
+  
+  .header {
+    background-color: #000;
+    color: #fff;
+    padding: 20px;
+  }
+  .banner{
+    width:100%;
+    height:100vh;
+    background:url('https://sxcontent9668.azureedge.us/cms-assets/assets/Axiom_2_verticaldaytime_051823_Axiom_2_verticaldaytime_051823_DSC_1344_desktop_3d44b9ee16.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .banner_content{
+    display: flex;
+    align-items: center;
+    height:100vh;
+  }
+
+  .container{
+    width:1200px;
+    max-width: 1200px;
+    margin:0 auto;
+    color:white;
+  }
+  
+  .banner_text{
+    width:500px;
+  }
+
+  .banner_text h3{
+    font-size: 30px;
+  }
+
+  .banner_text h1{
+    font-size:80px;
+    line-height: 80px;
+    font-weight: 700;
+    margin-top: 20px;
+  }
+
+.banner_text button{
+  width:30%;
+  height: 80px;
+  margin-top: 20px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.navbar{
+  position:absolute;
+  top:0;
+  left:0;
+  width:100%
+  
+}
+
+.navbar_text{
   display: flex;
-  flex-direction: column;
+  height: 60px;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.logo{
+  width: 50%;
+
+}
+.logo img{
+  width: 300px;
+  margin-right:80px;
+  height: 700px;
+}
+.navbar ul{
+  width:50%;
+  list-style-type: none;
+  display: flex;
+  justify-content: space-evenly;
+  margin-left: -72px;
+  color: #fff;
+  margin-top: 20px;
+  
+}
+.navbar ul li {
+  text-decoration: none;
+  font-weight: 800;
+ 
+}
+
+.btn{
+ 
+  
+}
+
+  .rockets-list {
+    margin-top: 20px;
+  }
+  
+  .rockets-list h2 {
+    font-size: 24px;
+  }
+  
+  .rockets-list ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .rockets-list li {
+    margin-bottom: 10px;
+  }
+
+  .midpage{
+    width:100%;
+    height:100vh;
+    background:url('https://sxcontent9668.azureedge.us/cms-assets/assets/Star6_3_DSC_1360_desktop_3dcfb70bb0.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+.endpage{
+  width:100%;
+  height:100vh;
+  background:url('https://sxcontent9668.azureedge.us/cms-assets/assets/Haven1_Hero_5_2600x1400_a23f540f5f.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.col-sm-4 {
+  color:black
+}
+.rocket-info p {
+  color: #000;
+}
+.end-logo{
+  height: 100px;
+  background-color: #000;
+}
+.end-logo {
+  color:beige;
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 30px;
+
+}
+.end-logo a{
+  text-decoration: none;
+  font-weight: 500;
+  color:#fff;
+ 
+}
+.sticky {
+  position: fixed;
+   top: 0; 
+  width: 100%;
+  background-color:none;
+}
+
+ul li{
   color: white;
+  text-decoration: none;
+  padding: 0 10px;
+  position: relative;
+}
+ul li::after {
+  content: "";
+  position: absolute;
+  background-color: white;
+  height: 3px;
+  width: 0%;
+  left: 0;
+  bottom: -10px;
+  transition: 0.3s;
 }
 
-.App-link {
-  color: #61dafb;
+ul li:hover:after {
+  width: 100%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+ul li:hover {
+  color: white ;
+}
+a:hover{
+  color:darkgrey
+}
+.navbar a{
+  text-decoration: none;
+  
+}
+a{
+  color:#fff;
+  text-decoration: none;
+}
+ .btn-smart{
+  color:#fff;
+  text-decoration: none;
+  border: none;
+  font-weight: 700;
+  border-radius: 15px;
+  font-size: 30px;
 }
